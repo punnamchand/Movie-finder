@@ -1,0 +1,162 @@
+* {
+  margin-left: 0;
+  padding: 0;
+}
+div,
+section,
+ul,
+li,
+a,
+header {
+  box-sizing: border-box;
+}
+.body {
+  background-color: #ACE5EE;
+  animation-name: animate;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes animate{
+  0%   {background-color: #ACE5EE;}
+  17%  {background-color: #F5DF4D;}
+  34%  {background-color: #A0DAA9;}
+  51% {background-color: #926AA6;}
+  68%  {background-color:   
+#EFE1CE;}
+  85%  {background-color: #282D3C;}
+  100% {background-color: #EDF1FF;}
+}
+header {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  min-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  align-items: center;
+  background-image: url("https://image.shutterstock.com/image-vector/collection-film-strip-frame-isolated-600w-1194562906.jpg");
+}
+
+#logo-text {
+  font-size: 50px;
+  font-weight: 300;
+  font-family: "Helvetica Neue";
+  color: rgb(228, 200, 42);
+}
+
+#navlist li {
+  list-style: none;
+  display: inline-block;
+  margin: 20px;
+}
+#navlist li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#movie_title {
+  font-size: 16pt;
+  width: 800px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 3px solid #96e097;
+  border-radius: 50px;
+  padding-left: 60px;
+}
+#btn {
+  width: 80px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 3px solid green;
+  border-radius: 10%;
+  background-color: rgb(1, 105, 224);
+}
+section {
+  width: 100%;
+  height: 250px;
+}
+#searchbar {
+  width: 100%;
+  height: 60px;
+}
+#moviesearch {
+  position: absolute;
+  top: 38%;
+  left: 22%;
+}
+
+#movieresults {
+  box-sizing: border-box;
+  position: absolute;
+  top: 400px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 420px;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  padding: 0px 40px;
+  width: 50%;
+  height: 120%;
+}
+.image {
+  width: 25%;
+  height: 120%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: rgb(194, 118, 18);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.description {
+  color: black;
+}
+
+#poster {
+  height: 430px;
+  width: 320px;
+}
+#movpos {
+  margin: 3%;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+  #movie_title {
+    width: 526px;
+    height: 35px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #movie_title {
+    width: 551px;
+    height: 45px;
+  }
+
+  #moviesearch {
+    width: 800px;
+  }
+
+  #btn {
+    height: 45px;
+    font-size: 14pt;
+    margin-left: 25px;
+  }
+}
